@@ -48,12 +48,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_Q,      KC_W,       KC_E,       KC_R,       KC_T,      /*|*/     KC_Y,       KC_U,       KC_I,       KC_O,       KC_P,
         HR_A,      HR_S,       HR_D,       HR_F,       KC_G,      /*|*/     KC_H,       HR_J,       HR_K,       HR_L,       HR_q,
         KC_Z,      KC_X,       KC_C,       KC_V,       KC_B,      /*|*/     KC_N,       KC_M,       KC_COMM,    KC_DOT,     KC_SLSH,
-        KC_ESCAPE, LT(_NAV, KC_SPACE), KC_TAB,                    /*|*/                 KC_BSPC,    LT(_SYM, KC_ENTER),     OSL(_UTIL)
+        KC_ESCAPE, LT(_NAV, KC_SPACE), KC_TAB,                    /*|*/                 KC_BSPC,    LT(_SYM, KC_ENTER),     MO(_UTIL)
     ),
     [_NAV] = LAYOUT_split_3x5_3(
-        XXXXXXX,   XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,   /*|*/     XXXXXXX,    KC_HOME,    KC_PGUP,    XXXXXXX,    KC_CAPS,
+        XXXXXXX,   XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,   /*|*/     XXXXXXX,    KC_HOME,    KC_PGUP,    XXXXXXX,    KC_PSCR,
         KC_LGUI,   KC_LALT,    KC_LCTL,    KC_LSFT,    XXXXXXX,   /*|*/     KC_LEFT,    KC_DOWN,    KC_UP,      KC_RGHT,    CW_TOGG,
-        XXXXXXX,   XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,   /*|*/     XXXXXXX,    KC_END,     KC_PGDN,    XXXXXXX,    XXXXXXX,
+        XXXXXXX,   XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,   /*|*/     XXXXXXX,    KC_END,     KC_PGDN,    XXXXXXX,    KC_CAPS,
         _______,   _______,    _______,                           /*|*/                             KC_DELETE,  MO(_NUM),   _______
     ),
     [_SYM] = LAYOUT_split_3x5_3(
@@ -72,7 +72,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         QK_BOOT,   XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,   /*|*/     XXXXXXX,    KC_PWR,     KC_SLEP,    KC_WAKE,    KC_MUTE,
         XXXXXXX,   XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,   /*|*/     XXXXXXX,    KVM_1,      KVM_2,      KVM_3,      KVM_4,
         XXXXXXX,   XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,   /*|*/     XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
-        XXXXXXX,   XXXXXXX,    XXXXXXX,                                                             XXXXXXX,    XXXXXXX,    TO(_ALPHA)
+        XXXXXXX,   XXXXXXX,    XXXXXXX,                                                             XXXXXXX,    XXXXXXX,    _______
     ),
 };
 
