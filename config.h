@@ -4,3 +4,5 @@
 #define CHORDAL_HOLD
 
 #define PERMISSIVE_HOLD
+
+#define USB_SUSPEND_WAKEUP_DELAY 0
