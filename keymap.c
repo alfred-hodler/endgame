@@ -95,16 +95,16 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     if (record->event.pressed) {
         switch (keycode) {
             case KVM_1:
-                SEND_STRING(SS_TAP(X_LEFT_CTRL)SS_DELAY(100)  SS_TAP(X_LEFT_CTRL)SS_DELAY(100)  SS_TAP(X_1));
+                SEND_STRING(SS_TAP(X_LEFT_CTRL)SS_DELAY(200)  SS_TAP(X_LEFT_CTRL)SS_DELAY(200)  SS_TAP(X_1));
                 return false;
             case KVM_2:
-                SEND_STRING(SS_TAP(X_LEFT_CTRL)SS_DELAY(100)  SS_TAP(X_LEFT_CTRL)SS_DELAY(100)  SS_TAP(X_2));
+                SEND_STRING(SS_TAP(X_LEFT_CTRL)SS_DELAY(200)  SS_TAP(X_LEFT_CTRL)SS_DELAY(200)  SS_TAP(X_2));
                 return false;
             case KVM_3:
-                SEND_STRING(SS_TAP(X_LEFT_CTRL)SS_DELAY(100)  SS_TAP(X_LEFT_CTRL)SS_DELAY(100)  SS_TAP(X_3));
+                SEND_STRING(SS_TAP(X_LEFT_CTRL)SS_DELAY(200)  SS_TAP(X_LEFT_CTRL)SS_DELAY(200)  SS_TAP(X_3));
                 return false;
             case KVM_4:
-                SEND_STRING(SS_TAP(X_LEFT_CTRL)SS_DELAY(100)  SS_TAP(X_LEFT_CTRL)SS_DELAY(100)  SS_TAP(X_4));
+                SEND_STRING(SS_TAP(X_LEFT_CTRL)SS_DELAY(200)  SS_TAP(X_LEFT_CTRL)SS_DELAY(200)  SS_TAP(X_4));
                 return false;
         }
     }
